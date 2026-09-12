@@ -20,6 +20,21 @@ namespace ITELEC2.Models
                     },
                     MyAnswer = "C",
                     Explanation = "In-memory collections are wiped out once the app stops running. A database stores data on disk, so it survives restarts and crashes."
+                },
+                new Question
+                {
+                    Number = 2,
+                    Topic = "Relational Data Modeling",
+                    Text = "Which approach is being used when an existing database is used to generate EF Core entity classes?",
+                    Choices = new Dictionary<string, string>
+                    {
+                        {"A", "Code-First"},
+                        {"B", "Database-First"},
+                        {"C", "Model-First"},
+                        {"D", "Controller-First"}
+                    },
+                    MyAnswer = "B",
+                    Explanation = "Database-First scaffolds C# model classes from a database that already exists, the reverse of Code-First."
                 }
             };
         }
